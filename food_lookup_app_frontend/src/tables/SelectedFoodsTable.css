@@ -1,0 +1,71 @@
+.selected-food-table-container {
+    margin      : 20px;
+    overflow-x  : auto;
+}
+
+.selected-food-table {
+    width           : 70%;
+    margin          : 2%;
+    margin-top      : 10px;
+    border-collapse : collapse;
+}
+
+.selected-food-table th,
+.selected-food-table td {
+    padding       : 8px;
+    text-align    : left;
+    border-bottom : 1px solid #ddd;
+}
+
+.selected-food-table th {
+    background-color  : #4CAF50;
+    color             : white;
+}
+
+.selected-food-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.selected-food-table tr:hover {
+    background-color: #ddd;
+}
+
+.totals-row {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.selected-food-table-container h3 {
+  margin-left : 2%; 
+  font-size   : 1.5rem; 
+  color       : #4CAF50; 
+}
+
+/* Button styling */
+.selected-food-table .edit-btn,
+.selected-food-table .delete-btn {
+  margin        : 0 5px;
+  padding       : 5px 10px;
+  font-size     : 0.8rem;
+  border        : none;
+  border-radius : 4px;
+  cursor        : pointer;
+}
+
+.selected-food-table .edit-btn {
+  background-color  : #4CAF50;
+  color             : white;
+}
+
+.selected-food-table .edit-btn:hover {
+  background-color: #45a049;
+}
+
+.selected-food-table .delete-btn {
+  background-color: #f44336;
+  color           : white;
+}
+
+.selected-food-table .delete-btn:hover {
+  background-color: #d32f2f;
+}
