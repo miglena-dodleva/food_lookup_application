@@ -7,11 +7,12 @@
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #4caf50;
-  color: white;
+  background-color: #f8bbd0;
+  color: rgb(0, 0, 0);
   transition: background-color 0.3s ease;
 }
 
 .add-new-product-button:hover {
-  background-color: #45a049;
+  background-color: #ec407a;
+  color: white;
 }

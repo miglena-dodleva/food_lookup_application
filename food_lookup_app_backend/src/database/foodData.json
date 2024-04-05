@@ -119,6 +119,14 @@
       "protein": 2.9,
       "carbs": 3.6,
       "fats": 0.4
+    },
+    {
+      "id": 16,
+      "name": "Milk",
+      "calories": "40",
+      "protein": "25",
+      "carbs": "10",
+      "fats": "5"
     }
   ]
 }

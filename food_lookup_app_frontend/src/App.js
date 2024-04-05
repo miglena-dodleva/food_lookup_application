@@ -13,7 +13,7 @@ function App() {
   const [foods, setFoods] = useState([]);
   const [filteredFoods, setFilteredFoods] = useState([]);
   const [selectedFoods, setSelectedFoods] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState([]);
 
 
   useEffect(() => {

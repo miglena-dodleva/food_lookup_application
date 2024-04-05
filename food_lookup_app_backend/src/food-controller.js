@@ -26,7 +26,7 @@ exports.searchFoodsByName = (request, response) => {
   let query = request.query.name.toLowerCase();
 
   let foodFilter = data.foods.filter((food) =>
-    food.name.toLowerCase().includes(query)
+    food.name.toLowerCase().startsWith(query)
   );
 
   response.json(foodFilter);
