@@ -5,7 +5,7 @@
   
   .food-table {
     width: 70%;
-    margin: auto; /* Центриране на таблицата */
+    margin: auto; 
     margin-top: 10px;
     border-collapse: collapse;
   }
@@ -18,16 +18,16 @@
   }
   
   .food-table th {
-    background-color: #ec407a; /* Розов цвят за заглавните редове */
+    background-color: #ec407a; 
     color: white;
   }
   
   .food-table tr:nth-child(even) {
-    background-color: #fce4ec; /* По-светъл розов за четните редове */
+    background-color: #fce4ec; 
   }
   
   .food-table tr:hover {
-    background-color: #f8bbd0; /* По-наситен розов при ховър */
+    background-color: #f8bbd0; 
   }
   
   .totals-row {
@@ -38,7 +38,7 @@
   .food-table-container h3 {
     margin-left: 2%;
     font-size: 1.5rem;
-    color: #ec407a; /* Розов цвят за заглавията */
+    color: #ec407a; 
   }
   
   /* Button styling */
@@ -53,21 +53,21 @@
   }
   
   .food-table .edit-btn {
-    background-color: #ec407a; /* Розов за редактиращия бутон */
+    background-color: #ec407a; 
     color: white;
   }
   
   .food-table .edit-btn:hover {
-    background-color: #d81b60; /* По-тъмен розов при ховър */
+    background-color: #d81b60; 
   }
   
   .food-table .delete-btn {
-    background-color: #f06292; /* Светъл розов за бутона за изтриване */
+    background-color: #f06292; 
     color: white;
   }
   
   .food-table .delete-btn:hover {
-    background-color: #ec407a; /* По-наситен розов при ховър */
+    background-color: #ec407a; 
   }
   
   .pagination-controls {
@@ -75,12 +75,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 2%;
   }
   
   .pagination-controls button {
     padding: 10px 15px;
     margin: 0 10px;
-    background-color: #ec407a; /* Розов за бутоните на пагинацията */
+    background-color: #ec407a; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -90,7 +91,7 @@
   }
   
   .pagination-controls button:hover {
-    background-color: #d81b60; /* По-тъмен розов при ховър */
+    background-color: #d81b60; 
   }
   
   .pagination-controls button:disabled {

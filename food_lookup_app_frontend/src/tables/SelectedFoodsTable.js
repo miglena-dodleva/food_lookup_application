@@ -1,13 +1,14 @@
-import React from 'react';
-import './SelectedFoodsTable.css';
-import { totalNutritionalValues } from '../NutritionHelper/helper';
+import React from "react";
+import "./SelectedFoodsTable.css";
+import { totalNutritionalValues } from "../NutritionHelper/helper";
 
 function SelectedFoodsTable({ selectedFoods }) {
   const totals = totalNutritionalValues(selectedFoods);
+  const totalItemCount = selectedFoods.reduce((total, selectedFoods) => total + selectedFoods.count, 0);
 
   return (
     <div className="selected-food-table-container">
-      <h3>Selected foods</h3>
+      <h3>Selected foods :</h3>
       <table className="selected-food-table">
         <thead>
           <tr>
@@ -20,7 +21,7 @@ function SelectedFoodsTable({ selectedFoods }) {
           </tr>
         </thead>
         <tbody>
-          {selectedFoods.map(food => (
+          {selectedFoods.map((food) => (
             <tr key={food.id}>
               <td>{food.name}</td>
               <td>{(food.calories * food.count).toFixed(1)}</td>
@@ -36,7 +37,7 @@ function SelectedFoodsTable({ selectedFoods }) {
             <td>{totals.protein.toFixed(1)}</td>
             <td>{totals.fat.toFixed(1)}</td>
             <td>{totals.carbs.toFixed(1)}</td>
-            <td></td>
+            <td>{totalItemCount}</td>
           </tr>
         </tbody>
       </table>
